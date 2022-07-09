@@ -33,14 +33,11 @@ jobs:
           key: ${{ runner.os }}-buildx-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-buildx-
-<<<<<<< HEAD
       - 
         uses: docker/login-action@v1 
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-=======
->>>>>>> 6e62b28e670a816e93d63101ff88cf8a367f70e3
       -
         name: Build and push
         id: docker_build
